@@ -1,7 +1,7 @@
 {
   "name": "gatsby-plugin-compile-es6-packages",
   "description": "Easily add support for compiling ES6 packages into Gasby projects",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "Rob Walker <hi@robwalker.co>",
   "bugs": {
     "url": "https://github.com/robwalkerco/gatsby-plugin-compile-es6-packages/issues"
@@ -33,7 +33,6 @@
     "postversion": "git push",
     "build": "babel src --out-dir . --ignore **/__tests__",
     "prepare": "cross-env NODE_ENV=production yarn run build",
-    "watch": "babel -w src --out-dir . --ignore **/__tests__",
-    "publish": "yarn run prepare && yarn publish; echo 'Published!'"
+    "watch": "babel -w src --out-dir . --ignore **/__tests__"
   }
 }
