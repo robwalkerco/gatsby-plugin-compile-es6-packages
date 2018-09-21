@@ -1,7 +1,7 @@
 {
   "name": "gatsby-plugin-compile-es6-packages",
   "description": "Easily add support for compiling ES6 packages into Gasby projects",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "author": "Rob Walker <hi@robwalker.co>",
   "bugs": {
     "url": "https://github.com/robwalkerco/gatsby-plugin-compile-es6-packages/issues"
