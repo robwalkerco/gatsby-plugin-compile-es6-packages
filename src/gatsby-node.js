@@ -6,7 +6,7 @@ exports.onCreateWebpackConfig = ({ actions, loaders }, { modules = [] }) => {
     module: {
       rules: [
         {
-          test: /\.js$/,
+          test: /\.m?js$/,
           exclude: modulePath =>
             /node_modules/.test(modulePath) &&
             // whitelist specific es6 module
