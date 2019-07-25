@@ -15,7 +15,7 @@ exports.onCreateWebpackConfig = (
             // whitelist specific es6 module
             !new RegExp(
               `node_modules[\\\\/](${modules
-                .map(mod => mod.replace(/\//, path.sep))
+                .map(module => module.replace(/\//, path.sep))
                 .map(regexEscape)
                 .join("|")})[\\\\/]`
             ).test(modulePath),
