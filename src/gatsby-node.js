@@ -10,10 +10,9 @@ exports.onCreateWebpackConfig = (
       rules: [
         {
           test,
-          exclude: modulePath =>
-            /node_modules/.test(modulePath) &&
+          include: modulePath =>
             // whitelist specific es6 module
-            !new RegExp(
+            new RegExp(
               `node_modules[\\\\/](${modules
                 .map(module => module.replace(/\//, path.sep))
                 .map(regexEscape)
